@@ -1,0 +1,64 @@
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url('../img/stars.png') repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url('../img/twinkling.png') repeat top center;
+  z-index: 1;
+  animation: move-twink-back 200s linear infinite;
+}
+
+/* .title {
+  font-size: 36px;
+  font-family: 'Lato', sans-serif;
+  margin-top: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; */
+
+/* Make sure text is infront of background images */
+/* display: block;
+  position: relative;
+  z-index: 3;
+}  */
+
+.logo {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  position: relative;
+  z-index: 3;
+  width: 40%;
+}
+
+.logo img:hover {
+  cursor: pointer;
+  filter: drop-shadow(10px 10px 200px #0ff);
+  transition: all ease-in 0.35s;
+}

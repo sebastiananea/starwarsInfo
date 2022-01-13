@@ -1,0 +1,5 @@
+.main {
+  height: 100vh;
+
+  background: #000 url('../img/stars.png') repeat top center;
+}
